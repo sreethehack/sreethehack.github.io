@@ -22,7 +22,9 @@ function wait(ms){
      end = new Date().getTime();
   }
 }
-document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + "p";
+setTimeout(function(){
+  document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + "p";
+}, 2000);
 //alert(document.getElementById("prompt0").innerHTML);
 /*wait(62.5)
 document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + "r";
