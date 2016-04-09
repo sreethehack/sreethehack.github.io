@@ -15,12 +15,8 @@
   <p> * Documentation:  https://help.ubuntu.com/</p>
   <p id="prompt0">root@machine: ~# </p>
 <script>
-function wait(ms){
-   var start = new Date().getTime();
-   var end = start;
-   while(end < start + ms) {
-     end = new Date().getTime();
-  }
+function addLetter(c) {
+  document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + a;
 }
 setTimeout(function(){
   document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + "a";
