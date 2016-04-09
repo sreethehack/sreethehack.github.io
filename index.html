@@ -10,6 +10,13 @@
   
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).keypress(function(e) {
+  if(e.which == 13) {
+    alert('You pressed enter!');
+  }
+});
+</script>
 </head><body>
   <p>Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)</p><br>
   <p> * Documentation:  https://help.ubuntu.com/</p>
@@ -39,10 +46,5 @@ setTimeout(function(){
 setTimeout(function(){
   document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + "Website: ";
 }, 110*7);
-$(document).keypress(function(e) {
-    if(e.which == 13) {
-        alert('You pressed enter!');
-    }
-});
 </script>
 </body></html>
