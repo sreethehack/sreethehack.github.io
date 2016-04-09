@@ -9,8 +9,29 @@
   }
   
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head><body>
   <p>Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)</p><br>
   <p> * Documentation:  https://help.ubuntu.com/</p>
-  <p>root@machine: ~# </p>
+  <p>root@machine: ~# <lol id="prompt0"></lol></p>
+<script>
+function wait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end < start + ms) {
+     end = new Date().getTime();
+  }
+}
+document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + "p";
+wait(62.5)
+document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + "r";
+wait(62.5)
+document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + "o";
+wait(62.5)
+document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + "x";
+wait(62.5)
+document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + "y";
+wait(62.5)
+document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + "<br>|";
+</script>
 </body></html>
