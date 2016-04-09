@@ -12,9 +12,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script>
 function maiN() {
+  var chars = [];
   $(document).keypress(function(e) {
-    l = String.fromCharCode(e.which);
-    document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + l;
+    if(e.which == 13) {
+      alert(chars);
+    } else {
+      l = String.fromCharCode(e.which);
+      document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + l;
+      chars.push(l);
+    }
   });
 }
 </script>
