@@ -17,11 +17,11 @@ function maiN() {
     if(e.which == 13) {
       alert(chars);
     } else if(e.which == 8) {
-      document.getElementById("prompt1").innerHTML = document.getElementById("prompt1").innerHTML.slice(0, -1);
+      document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML.slice(0, -1);
       var a = chars.pop();
     } else {
       l = String.fromCharCode(e.which);
-      document.getElementById("prompt1").innerHTML = document.getElementById("prompt1").innerHTML + l;
+      document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + l;
       chars.push(l);
     }
   });
@@ -54,12 +54,12 @@ setTimeout(function(){
   document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + "Welcome to SreeDoS Proxy! Your Fake IP Will Be 198.91.81.2<br>Just Type In your website, and press Enter!!<br>";
 }, 110*6);
 setTimeout(function(){
-  document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + "Website: <p id='prompt1'>";
+  document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + "Website: ";
 }, 110*7);
 var lol = true;
 //maiN();
 setTimeout(function(){
   maiN();
 }, 110*7.1);
-</script></p>
+</script>
 </body></html>
