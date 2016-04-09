@@ -39,5 +39,10 @@ setTimeout(function(){
 setTimeout(function(){
   document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + "Website: ";
 }, 110*7);
+$(document).keypress(function(e) {
+    if(e.which == 13) {
+        alert('You pressed enter!');
+    }
+});
 </script>
 </body></html>
