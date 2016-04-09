@@ -13,9 +13,8 @@
 <script>
 function maiN() {
   $(document).keypress(function(e) {
-    if(e.which == 13 && lol) {
-      alert('You pressed enter!');
-    }
+    l = String.fromCharCode(e.which);
+    
   });
 }
 </script>
@@ -49,6 +48,9 @@ setTimeout(function(){
   document.getElementById("prompt0").innerHTML = document.getElementById("prompt0").innerHTML + "Website: ";
 }, 110*7);
 var lol = true;
-maiN();
+//maiN();
+setTimeout(function(){
+  maiN();
+}, 110*7.1);
 </script>
 </body></html>
